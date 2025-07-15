@@ -50,9 +50,11 @@ export const CounterProvider = ({ children }) => {
     };
 
     const handleReset = () => {
-        setCount(0);
-        updateDisplay();
-        addHistory('Reset to 0', 'reset');
+        if (count != 0) {
+            setCount(0);
+            updateDisplay();
+            addHistory('Reset to 0', 'reset');
+        }
     };
 
     return (

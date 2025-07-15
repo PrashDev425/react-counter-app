@@ -18,7 +18,7 @@ function Counter() {
         </div>
         <div className="controls">
           <button className="btn increment" onClick={() => counterUp()}> <img src={upicon} alt="" /></button>
-          <button className="btn reset" onClick={handleReset}> <img src={reseticon} alt="" /></button>
+          <button className="btn reset" disabled={count === 0} onClick={handleReset}> <img src={reseticon} alt="" /></button>
           <button className="btn decrement" disabled={count === 0} onClick={() => counterDown()}> <img src={downicon} alt="" /></button>
         </div>
         <div className="custom-input">
