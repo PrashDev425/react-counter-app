@@ -6,7 +6,10 @@ import History from '../history/History';
 import './Counter.css';
 
 function Counter() {
-  const { count, inputValue, animate, history, setInputValue, counterUp, counterDown, handleReset, handleSetValue } = useCounter();
+  const { 
+    count, inputValue, animate, history, 
+    setInputValue, counterUp, counterDown, handleReset, handleSetValue 
+  } = useCounter();
 
   return (
     <div className="container">
